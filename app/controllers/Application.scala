@@ -15,7 +15,7 @@ object Application extends Controller {
 
   val personForm: Form[Person] = Form {
   	mapping(
-      "name" -> text
+      "name" -> text, "surname" -> text
   	)(Person.apply)(Person.unapply)
   }
 

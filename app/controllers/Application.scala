@@ -17,7 +17,7 @@ object Application extends Controller {
   	mapping(
       "name" -> text, "surname" -> text
   	)(Person.apply)(Person.unapply)
-  }
+ }
 
   def addPerson = Action { implicit request =>
   	val person = personForm.bindFromRequest.get
